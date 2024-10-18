@@ -1,0 +1,17 @@
+#! /bin/bash
+
+chmod 711 $PWD/testbash.sh
+
+echo "nom du programme" $0
+echo "nombre de parametres" $#
+echo "liste des parametres" $*
+echo "numero du processus" $$
+
+s=$(($1+$2))
+echo "somme" $s
+
+ls | wc -w
+
+history
+
+locate R2020b/bin/matlab
